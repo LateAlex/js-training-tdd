@@ -8,7 +8,12 @@
  */
 
 // Your code:
-
+function getLast(thing) {
+    if (typeof thing === 'string') {
+    return thing.charAt(thing.length - 1)} else {
+    return thing[thing.length - 1]
+    }
+ }
 //* Begin of tests
 const assert = require('assert');
 

@@ -7,7 +7,13 @@
  */
 
 // Your code:
-
+function sentence(arr) {
+    let product = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        product = product + ` ${arr[i]}`
+    }
+    return product
+}
 //* Begin of tests
 const assert = require('assert');
 

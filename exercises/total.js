@@ -7,10 +7,16 @@
  */
 
 // Your code:
-
+function total(arr) {
+    let x = 0;
+    let i = 0;
+    for (i = 0; i < arr.length; i++) {
+        x = x + arr[i]
+    }
+    return x;
+}
 //* Begin of tests
 const assert = require('assert');
-
 assert.strictEqual(typeof total, 'function');
 assert.strictEqual(total.length, 1);
 assert.deepStrictEqual(total([ 1, 1, 1 ]), 3);
